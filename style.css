@@ -1,0 +1,82 @@
+/* font-family: 'Klee One', cursive; */
+* {
+    margin: 0;
+    font-family: 'Klee One', cursive;
+}
+
+body {
+    background-color: bisque;
+}
+
+
+/*============
+  Typography
+============*/
+
+h1 {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin: 0.5em;
+}
+
+
+/*============
+    Layout
+============*/
+
+header, .logo, .languages-available {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.languages {
+    text-align: center;
+}
+
+
+
+
+
+
+
+/*============
+    Other
+============*/
+
+img {
+    border-radius: 50%;
+    max-width: 100%;
+    padding: 1em 1em;
+}
+
+
+.main-logo {
+    background-image: url(../Images/studying.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    text-align: center;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+
+
+
