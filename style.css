@@ -52,6 +52,10 @@ header, .logo, .languages-available {
     text-align: center;
 }
 
+.helpful-articles {
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
