@@ -2,12 +2,20 @@
 * {
     margin: 0;
     font-family: 'Klee One', cursive;
+    box-sizing: border-box;
 }
 
 body {
     background-color: bisque;
 }
 
+header {
+    background-color: rgb(182, 159, 124);
+}
+
+.container {
+   margin: 1em 2em;
+}
 
 /*============
   Typography
@@ -16,13 +24,19 @@ body {
 h1 {
     font-weight: 600;
     font-size: 1.8rem;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 3px 1px rgba(250, 186, 186, 0.664);
 }
+
 
 nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
+    margin: 0.5em 0 1.5em 0;
 }
+
 
 nav a {
     font-weight: 600;
@@ -34,7 +48,15 @@ nav a {
 p {
     font-size: 1.3rem;
     line-height: 1.5;
-    margin: 0.5em;
+}
+
+.main-header {
+    text-align: center;
+    margin: 1em 0;
+    font-weight: 600;
+    font-size: 1.8rem;
+    background-color: rgb(241, 186, 149);
+
 }
 
 
@@ -53,10 +75,31 @@ header, .logo, .languages-available {
 }
 
 .helpful-articles {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: 1fr 1fr;
+
 }
 
+.lang-learning-benefits {
+    background-color: white;
+    border: 20px solid lightgray;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.lang-learning-benefits > * {
+    margin: 0.3em 0;
+}
+
+.lang-learning-tips {
+    background-color: white;
+    border: 20px solid lightgray;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
 
 
 
@@ -68,7 +111,7 @@ header, .logo, .languages-available {
 
 img {
     border-radius: 50%;
-    max-width: 100%;
+    max-width: 80%;
     padding: 1em 1em;
 }
 
@@ -79,8 +122,11 @@ img {
     background-position: center;
     height: 40vh;
     text-align: center;
-    font-weight: 600;
-    font-size: 3rem;
+    font-weight: 300;
+    font-size: 2rem;
+    margin: 1em 0;
+    color: white;
+    text-shadow: 3px 1px rgb(22, 18, 18);
 }
 
 
