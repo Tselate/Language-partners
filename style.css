@@ -59,6 +59,28 @@ p {
 
 }
 
+.lang-learning-benefits > h2, 
+.lang-learning-tips > h2 {
+    text-transform: uppercase;
+    padding: 1em 0;
+    color: rgb(209, 97, 23);
+}
+
+.lang-learning-benefits > .article-intro, 
+.lang-learning-tips > .article-intro {
+    padding: 0.8em 0;
+    line-height: 1.8em;
+}
+
+.lang-learning-benefits > a, 
+.lang-learning-tips > a{
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    font-size: 1.3rem;
+    color: rgb(209, 97, 23);
+}
+
+
 
 /*============
     Layout
@@ -89,8 +111,10 @@ header, .logo, .languages-available {
     flex-direction: column;
 }
 
-.lang-learning-benefits > * {
-    margin: 0.3em 0;
+.lang-learning-benefits > img, 
+.lang-learning-tips > img {
+    margin: 0 auto;
+    object-fit: cover;
 }
 
 .lang-learning-tips {
@@ -111,7 +135,7 @@ header, .logo, .languages-available {
 
 img {
     border-radius: 50%;
-    max-width: 80%;
+    max-width: 60%;
     padding: 1em 1em;
 }
 
