@@ -133,9 +133,14 @@ header, .logo, .languages-available {
     Other
 ============*/
 
+.logo > img {
+    border-radius: 50%;
+    max-width: 60%;   
+}
+
 img {
     border-radius: 50%;
-    max-width: 60%;
+    max-width: 100%;
     padding: 1em 1em;
 }
 
