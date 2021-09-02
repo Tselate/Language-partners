@@ -80,6 +80,14 @@ p {
     color: rgb(209, 97, 23);
 }
 
+.languages-list {
+    margin: 2em;
+    text-decoration: underline;
+    text-shadow: 3px 1px rgba(250, 186, 186, 0.664);
+    font-size: 1.3rem;
+
+}
+
 
 
 /*============
