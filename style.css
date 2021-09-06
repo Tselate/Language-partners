@@ -8,13 +8,13 @@
 body {
     background: #EB5757;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #333232, #701111); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to bottom, #cc7f7f, #701111); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
 }
 
 header {
-    background-color: #000000;
+    background-color: #000000dc;
    
 }
 
@@ -212,7 +212,7 @@ img {
     font-size: 2rem;
     margin: 1em 0;
     color: white;
-    text-shadow: 3px 1px rgb(22, 18, 18);
+    text-shadow: 3px 2px rgb(0, 0, 0);
 }
 
 
