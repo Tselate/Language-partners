@@ -6,11 +6,16 @@
 }
 
 body {
-    background-color: bisque;
+    background: #EB5757;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #333232, #701111); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 
 header {
-    background-color: rgb(82, 40, 21);
+    background-color: #000000;
+   
 }
 
 .container {
@@ -26,8 +31,8 @@ h1 {
     font-size: 1.8rem;
     text-decoration: underline;
     text-transform: capitalize;
-    color: white;
-    text-shadow: 3px 1px rgba(39, 34, 34, 0.664);
+    color:white;
+    /* text-shadow: 3px 1px rgba(39, 34, 34, 0.664); */
 }
 
 
@@ -43,7 +48,7 @@ nav a {
     font-weight: 600;
     font-size: 1.5rem;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: white;
     transition: all 0.5s;
 }
 
@@ -59,6 +64,10 @@ nav a:focus {
 p {
     font-size: 1.3rem;
     line-height: 1.5;
+}
+
+.description {
+    color: white;
 }
 
 .main-header {
@@ -107,14 +116,15 @@ p {
 .languages-list {
     margin: 2em;
     text-decoration: underline;
-    text-shadow: 2px 1px rgba(247, 207, 207, 0.664);
+    text-shadow: 2px 1px rgba(70, 64, 64, 0.664);
     font-size: 1.3rem;
+    color: white;
 }
 
 .more-languages {
     text-decoration: none;
-    color: black;
-    text-shadow: 2px 1px rgba(247, 207, 207, 0.664);
+    color: white;
+    text-shadow: 2px 1px rgba(19, 17, 17, 0.664);
     font-size: 1.3rem;
     display: block;
     transition: all 0.5s;
@@ -144,9 +154,8 @@ header, .logo, .languages-available {
 }
 
 .helpful-articles {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -156,6 +165,7 @@ header, .logo, .languages-available {
     padding: 1.5em;
     display: flex;
     flex-direction: column;
+    margin-bottom: 1em;
 }
 
 .lang-learning-benefits > img, 
@@ -305,40 +315,64 @@ img {
 
     .main-container {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 1em;
-        grid-template-areas: 
-            "header header header benefits"
-            "description description description benefits"
-            "description description description benefits"
-            "description description description tips"
-            "logo logo logo tips";
+        align-items: flex-start;
     }
 
     .main-header {
-        grid-area: header;
-        align-self: baseline;
+        grid-column: 1 / 3;
+    
     }
 
     .description {
-        grid-area: description;
+        color: white;
+        grid-column: 1 / 3;
+        font-size: 2rem;
     }
 
     .main-logo {
-        grid-area: logo;
+        grid-column: 1 / 3;
+        font-size: 4rem;
+        height: 130%;
+        margin-top: 0.2em;
     }
 
-    .lang-learning-tips {
-        grid-area: tips;
-        height: 10px;
+    .helpful-articles {
+        grid-column: 3/4;
+        grid-row: 1 /5;
+    }
+
+    article.lang-learning-benefits {
+        margin-top: 1em;
+        overflow: visible;
+    }
+
+    .lang-learning-benefits > img, 
+    .lang-learning-tips > img {
+        max-width: 40%;
 
     }
 
-    .lang-learning-benefits {
-        grid-area: benefits;
-        height: 10px;
-
+    .lang-learning-benefits > h2, 
+    .lang-learning-tips > h2 {
+      font-size: 1rem;
     }
+
+    .lang-learning-benefits > .article-intro, 
+    .lang-learning-tips > .article-intro,
+    .lang-learning-benefits > p, 
+    .lang-learning-tips > p {
+        font-size: 1rem;
+    }
+
+    .lang-learning-benefits > a, 
+    .lang-learning-tips > a{
+    
+        font-size: 1rem;
+        
+    }
+
 }
 
 
