@@ -245,7 +245,6 @@ img {
 }
 
 .form-info {
-    max-width: 85%;
     margin: 0 auto;
 }
 
@@ -253,7 +252,7 @@ img {
     color: white;
     font-weight: bolder;
     background-color: rgb(241, 186, 149);
-    max-width: 40%;
+    max-width: 50%;
     margin: 0 auto;
 }
 
@@ -273,7 +272,7 @@ img {
 .partner-signup > textarea {
     background-color: rgba(241, 186, 149, 0.116);
     border: 2px solid #000000dc;
-    max-width: 37.5%;
+    max-width: 140%;
 }
 
 .form-text {
