@@ -460,6 +460,12 @@ img {
 
 }
 
+@media (min-width: 900px) {
+    .main-logo {
+        height: 130%;
+    }
+}
+
 @media (min-width: 1200px) {
     .main-logo {
         max-width: 70%;
