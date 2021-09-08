@@ -62,11 +62,6 @@ nav a:focus {
     color: rgb(216, 80, 17);
 }
 
-.current-page {
-    text-decoration: underline;
-    color: red;
-}
-
 p {
     font-size: 1.3rem;
     line-height: 1.5;
@@ -265,6 +260,7 @@ img {
 }
 
 .partner-signup > input {
+    max-width: 100%;
     background-color: rgba(241, 186, 149, 0.116);
     margin-bottom: 1em;
     border: 2px solid #000000dc;
@@ -273,7 +269,7 @@ img {
 .partner-signup > textarea {
     background-color: rgba(241, 186, 149, 0.116);
     border: 2px solid #000000dc;
-    max-width: 140%;
+    max-width: 100%;
 }
 
 .form-text {
@@ -346,7 +342,7 @@ img {
 
     .logo {
         flex-direction: row-reverse;
-        justify-content: space-evenly;
+        justify-content: space-around;
         grid-area: logo;
     }
 
@@ -382,6 +378,10 @@ img {
     .container {
         max-width: 95%;
         margin: 0 auto;
+    }
+
+    .home-page, .sign-up {
+        font-size: 2rem;
     }
 
 
@@ -449,7 +449,26 @@ img {
         
     }
 
+    .form-info {
+        max-width: 50%;
+    }
+
+    .form-text > p {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
 }
+
+@media (min-width: 1200px) {
+    .main-logo {
+        max-width: 70%;
+        margin: 0 auto;
+        margin-top: 0.8em;
+    }
+}
+
+
 
 
 
