@@ -469,7 +469,7 @@ img {
     }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
     .main-logo {
         max-width: 70%;
         margin: 0 auto;
