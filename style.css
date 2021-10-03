@@ -471,6 +471,9 @@ img {
         margin: 0 auto;
         margin-top: 0.8em;
     }
+    
+    .container {
+        max-width: 80%;
 }
 
 

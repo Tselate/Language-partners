@@ -12,7 +12,7 @@ registartionForm.addEventListener("submit", event => {
 
     let newHtmlContent = `
         <div class="form-text">
-            <h2> Congradulation, ${partnerFullName}! </h2> </br>
+            <h2> Congratulations, ${partnerFullName}! </h2> </br>
             <p>  You are on your way to finding your language partner and continuing your language learning journey. </p></br>
             <p> An email containg instructions on your next steps has been sent to you!</p>
 
