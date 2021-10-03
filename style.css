@@ -193,7 +193,7 @@ header, .logo, .languages-available {
 
 .logo > img {
     border-radius: 50%;
-    max-width: 60%;   
+    max-width: 35%;   
 }
 
 img {
@@ -463,6 +463,10 @@ img {
     .main-logo {
         height: 130%;
     }
+
+    .logo > img {
+        max-width: 30%;
+    }
 }
 
 @media (min-width: 1300px) {
@@ -470,6 +474,10 @@ img {
         max-width: 70%;
         margin: 0 auto;
         margin-top: 0.8em;
+    }
+
+    .logo > img {
+        max-width: 20%;
     }
     
     .container {
