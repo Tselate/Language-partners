@@ -14,7 +14,7 @@ registartionForm.addEventListener("submit", event => {
         <div class="form-text">
             <h2> Congratulations, ${partnerFullName}! </h2> </br>
             <p>  You are on your way to finding your language partner and continuing your language learning journey. </p></br>
-            <p> An email containg instructions on your next steps has been sent to you!</p>
+            <p> An email containing instructions on your next steps has been sent to you!</p>
 
         </div>
     `
